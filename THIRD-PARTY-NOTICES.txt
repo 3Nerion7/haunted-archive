@@ -1,0 +1,25 @@
+MODEL ONLY — NOT APPLICATION CODE OR A PRIOR CONTEST ENTRY
+
+sentence-transformers/all-MiniLM-L6-v2
+Revision: 1110a243fdf4706b3f48f1d95db1a4f5529b4d41
+Source: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+Upstream model card declares Apache-2.0. Preserve its attribution and license
+conditions if model files are redistributed. Weights are NOT included here;
+MODEL-MANIFEST.json only lists public artifact names/hashes/source URLs.
+Upstream authors and the Microsoft MiniLM work provide the model. This
+prototype does not train, fine-tune or claim ownership of those weights.
+Mean pooling with an attention mask followed by L2 normalization follows
+the upstream model-card embedding recipe, implemented anew for this CLI.
+
+Existing runtime dependencies retain their own licenses:
+- NumPy: BSD-3-Clause and bundled notices.
+- ONNX Runtime: MIT.
+- Hugging Face Tokenizers: Apache-2.0.
+No dependencies or weights were installed/downloaded for this prototype.
+
+The five fictional passages, their annotations, four query cases, notebook
+mechanic and CLI code were newly prepared with AI assistance for this local
+experiment. No other participant's source or datasets were copied. The original application code, fictional corpus, annotations and tests in
+this package are offered under the included MIT LICENSE. Publishing this
+source package does not itself establish a contest entry. Third-party model assets
+and dependencies keep their separate licenses; they are not bundled. Corpus/provenance records do not describe real events.

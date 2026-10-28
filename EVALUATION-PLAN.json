@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-28 14:46:23 UTC",
+  "phase": "PREDECLARED_BEFORE_FIRST_INFERENCE",
+  "model": "sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "semantic_policy": {
+    "threshold": 0.4,
+    "top_k": 3,
+    "score": "cosine similarity, not probability, confidence or fact verification",
+    "threshold_basis": "Fixed prototype policy selected before running these queries; not calibrated or claimed optimal. Do not change to make cases pass."
+  },
+  "lexical_policy": {
+    "method": "TF-IDF cosine with fixed small English stopword list",
+    "threshold": 0,
+    "selection": "strictly greater than zero, up to3",
+    "comparison": "Ranking/coverage comparison on same frozen cases, not matched-calibration thresholds or population accuracy."
+  },
+  "cases": [
+    {
+      "id": "clear",
+      "query": "Where are the village storytellers' recorded memories stored?",
+      "expected_any_source": [
+        "voices"
+      ],
+      "expected_abstain": false,
+      "expected_conflict": false
+    },
+    {
+      "id": "paraphrase",
+      "query": "Which cupboard houses the town's audio heritage?",
+      "expected_any_source": [
+        "voices"
+      ],
+      "expected_abstain": false,
+      "expected_conflict": false
+    },
+    {
+      "id": "contradictory",
+      "query": "Was the north lantern lit at midnight on Night Three?",
+      "expected_all_sources": [
+        "harbor-a",
+        "harbor-b"
+      ],
+      "expected_abstain": false,
+      "expected_conflict": true
+    },
+    {
+      "id": "out-of-corpus",
+      "query": "What is the orbital period of Neptune?",
+      "expected_any_source": [],
+      "expected_abstain": true,
+      "expected_conflict": false
+    }
+  ],
+  "notebook_test": {
+    "hypothesis": "One witness may have misremembered the lantern, but I have not decided which.",
+    "selected_sources": [
+      "harbor-a",
+      "harbor-b"
+    ],
+    "expected": "Two exact passages and an authored-annotation conflict; never an automatic truth verdict. Test actor is fictional; no human review attributed."
+  },
+  "integrity_controls": [
+    "Exact quote == corpus substring at [start,end), source textSHA matches.",
+    "Claim annotations must quote exact source spans, labelled author supplied.",
+    "Tampered corpus hash fails closed.",
+    "Hypothesis remains a reader claim, not generated evidence.",
+    "OOS abstention is threshold policy, not reliable universal OOS detection."
+  ],
+  "reporting": "Report every case, ranking, score, abstention and expectation mismatch, plus baseline; retain failures without threshold or corpus tuning. No accuracy/probability/general-usefulness claim from4fictional cases.",
+  "constraints": {
+    "network": 0,
+    "API_keys": 0,
+    "downloads": 0,
+    "installs": 0,
+    "new_accounts": 0,
+    "real_memories": 0,
+    "article": false,
+    "submission": false
+  },
+  "previous_work": "New code/corpus/game mechanic only. Reuse existing licensed model files/runtime; do not copy ScopeTrace/SlothProof code, benchmarks or UI."
+}

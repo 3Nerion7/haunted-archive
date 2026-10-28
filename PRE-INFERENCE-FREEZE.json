@@ -1,0 +1,10 @@
+{
+  "phase": "BEFORE_FIRST_INFERENCE",
+  "created_utc": "2026-10-28T14:46:23.908639+00:00",
+  "files": {
+    "corpus.json": "796d049ba4604dd74b9c86f96d548ca210f7ae260bffcfa6e98cf814a4a9cdb0",
+    "EVALUATION-PLAN.json": "4f9911501caefab3b2840c086cdcefc556e0df6ea3957e44dc757c60a5525896",
+    "MODEL-MANIFEST.json": "db30b937880860e192adea2983a64a722d99f059492dd1cd43fe6635eed87eb3"
+  },
+  "threshold": 0.4
+}

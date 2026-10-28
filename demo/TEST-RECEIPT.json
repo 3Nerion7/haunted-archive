@@ -1,0 +1,65 @@
+{
+  "utc": "2026-10-28T18:54:30.634951+00:00",
+  "python": "3.12.14",
+  "platform": "Windows 11",
+  "numpy": "2.5.4",
+  "onnxruntime": "1.31.0",
+  "tokenizers": "0.23.3",
+  "tests_passed": 14,
+  "tests_skipped": 0,
+  "real_CPU_inference_tests": 2,
+  "source_unchanged_from190": true,
+  "commands": [
+    {
+      "args": [
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-v"
+      ],
+      "returncode": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "82c57f619b0fb8c51a13337a876c646b226347e1d1c5f08a9212559392b9d26c"
+    },
+    {
+      "args": [
+        "-B",
+        "archive_game.py",
+        "rank",
+        "Was the north lantern lit at midnight on Night Three?"
+      ],
+      "returncode": 0,
+      "stdout_sha256": "ff51e01fcf8ceed39586744ea6f7dc3d9e015601e406fa94c187f348b58ebdf8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "args": [
+        "-B",
+        "archive_game.py",
+        "rank",
+        "What is the exact wattage of the north lantern?"
+      ],
+      "returncode": 0,
+      "stdout_sha256": "b5c16589417ac45d0f8c290ecf36e145d334c904a1dd4b2d7bbeb06d835536cd",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "args": [
+        "-B",
+        "archive_game.py",
+        "note",
+        "Was the north lantern lit?",
+        "FICTIONAL DEMO: I have not decided which account to trust.",
+        "harbor-a",
+        "harbor-b",
+        "--output",
+        "demo/example-notebook.json"
+      ],
+      "returncode": 0,
+      "stdout_sha256": "ba42f683792ad98efa30fda6a9f9c324475b04b850bda3a01bd457003af2d78e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "guard": "Test suite patches Python sockets only; not OS/native network isolation"
+}

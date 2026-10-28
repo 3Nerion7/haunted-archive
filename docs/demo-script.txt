@@ -1,0 +1,55 @@
+{
+  "video": "demo.mp4",
+  "format": "1280x720 H264,24fps,silent captioned edited CLI replay",
+  "editorial_duration_seconds": 76,
+  "not_process_latency": true,
+  "receipt_sha256": "07990c3dc16549e29d38f9d83d436181bfa50cd0c979f49d99688c150ccd47b0",
+  "scenes": [
+    {
+      "scene": 0,
+      "seconds": 7,
+      "caption": "A limited CLI clue notebook with five fictional passages. The model ranks clues and generates no answer."
+    },
+    {
+      "scene": 1,
+      "seconds": 14,
+      "record_ids": [
+        "paraphrase-semantic",
+        "paraphrase-lexical"
+      ],
+      "caption": "Exact query: Which cupboard houses the town's audio heritage? Semantic voices score 0.568829; lexical retrieval abstains. One illustration, not superiority."
+    },
+    {
+      "scene": 2,
+      "seconds": 16,
+      "record_ids": [
+        "lantern"
+      ],
+      "caption": "Both exact lantern passages are displayed. Conflicts come from authored metadata; irrelevant glasshouse hit 0.427989 remains visible."
+    },
+    {
+      "scene": 3,
+      "seconds": 14,
+      "record_ids": [
+        "missing-wattage"
+      ],
+      "caption": "The exact wattage question still retrieves related passages; displayed scores come from this execution. No answer is generated and no reliable answerability detector is claimed."
+    },
+    {
+      "scene": 4,
+      "seconds": 18,
+      "record_ids": [
+        "notebook"
+      ],
+      "caption": "The supplied fictional hypothesis is saved with two exact sources. The actual output does not automatically determine support and claims no personal review."
+    },
+    {
+      "scene": 5,
+      "seconds": 7,
+      "caption": "Reproduction instructions and full records accompany the source. Runtime/model prerequisites are separate. This is a limited fictional prototype, not a complete game or accuracy claim."
+    }
+  ],
+  "input_is_actual_recorded_stdout": true,
+  "no_live_interface_claim": true,
+  "all_passages_and_hypothesis_are_fictional": true
+}

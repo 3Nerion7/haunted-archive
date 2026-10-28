@@ -1,0 +1,266 @@
+HAUNTED ARCHIVE — REAL LOCAL CLI TRANSCRIPT, 2026-10-28 UTC
+Synthetic fiction only. Commands use python as an alias for the configured existing interpreter.
+HAUNTED_MODEL_DIR was set to an existing local pinned model; private paths are omitted.
+No generated answer. Similarity is neither proof nor probability.
+
+> python -B archive_game.py rank "Was the north lantern lit at midnight on Night Three?"
+{
+  "mode": "semantic",
+  "query": "Was the north lantern lit at midnight on Night Three?",
+  "abstained": false,
+  "threshold": 0.4,
+  "score_kind": "COSINE_SIMILARITY_NOT_PROBABILITY_OR_TRUTH",
+  "hits": [
+    {
+      "source_id": "harbor-a",
+      "title": "Copper Lighthouse — keeper's page",
+      "provenance": "Original fictional game passage created for Haunted Archive on 2026-10-28; no real people or events.",
+      "quote": "At midnight on Night Three, the north lantern stayed dark. A keeper recorded that no beam crossed the harbor. The generator cabinet was sealed with red wax.",
+      "start": 0,
+      "end": 156,
+      "text_sha256": "789e1c93709400fe4a5b9410433ddf8a591b4231d3b57a3614fd505e6398a60e",
+      "score": 0.7581032514572144
+    },
+    {
+      "source_id": "harbor-b",
+      "title": "Copper Lighthouse — clerk's page",
+      "provenance": "Original fictional game passage created for Haunted Archive on 2026-10-28; no real people or events.",
+      "quote": "At midnight on Night Three, the north lantern was shining. A clerk recorded that a green beam crossed the harbor. The generator cabinet was sealed with blue wax.",
+      "start": 0,
+      "end": 161,
+      "text_sha256": "393051a46f0f8cc9d111978d6121c89e0e53ae7a1890f927bb2b8371c2328386",
+      "score": 0.7127800583839417
+    },
+    {
+      "source_id": "glasshouse",
+      "title": "The marigold greenhouse",
+      "provenance": "Original fictional game passage created for Haunted Archive on 2026-10-28; no real people or events.",
+      "quote": "The greenhouse clock struck thirteen while the marigolds slept beneath a frost of silver dust. An apprentice left paper butterflies on the empty bench. The glass roof reflected a sky without stars.",
+      "start": 0,
+      "end": 197,
+      "text_sha256": "1e86f293e691c70d6bb33eb5ae9f51d2777bbcf2f1c818293a03aac9b7b28994",
+      "score": 0.4279894232749939
+    }
+  ],
+  "all_scores": [
+    {
+      "source_id": "harbor-a",
+      "score": 0.7581032514572144
+    },
+    {
+      "source_id": "harbor-b",
+      "score": 0.7127800583839417
+    },
+    {
+      "source_id": "glasshouse",
+      "score": 0.4279894232749939
+    },
+    {
+      "source_id": "wardrobe",
+      "score": 0.20761950314044952
+    },
+    {
+      "source_id": "voices",
+      "score": 0.15834015607833862
+    }
+  ],
+  "authored_conflicts": [
+    {
+      "topic": "north-lantern-night-three-midnight",
+      "sources": [
+        "harbor-a",
+        "harbor-b"
+      ],
+      "values": [
+        "dark",
+        "shining"
+      ],
+      "basis": "AUTHOR_SUPPLIED_FICTIONAL_ANNOTATIONS_NOT_MODEL_INFERENCE"
+    }
+  ],
+  "scope": "FICTIONAL_CLUES_ONLY_NO_GENERATED_FACTS"
+}
+[exit status: 0]
+
+> python -B archive_game.py rank "What is the exact wattage of the north lantern?"
+{
+  "mode": "semantic",
+  "query": "What is the exact wattage of the north lantern?",
+  "abstained": false,
+  "threshold": 0.4,
+  "score_kind": "COSINE_SIMILARITY_NOT_PROBABILITY_OR_TRUTH",
+  "hits": [
+    {
+      "source_id": "harbor-a",
+      "title": "Copper Lighthouse — keeper's page",
+      "provenance": "Original fictional game passage created for Haunted Archive on 2026-10-28; no real people or events.",
+      "quote": "At midnight on Night Three, the north lantern stayed dark. A keeper recorded that no beam crossed the harbor. The generator cabinet was sealed with red wax.",
+      "start": 0,
+      "end": 156,
+      "text_sha256": "789e1c93709400fe4a5b9410433ddf8a591b4231d3b57a3614fd505e6398a60e",
+      "score": 0.459565669298172
+    },
+    {
+      "source_id": "harbor-b",
+      "title": "Copper Lighthouse — clerk's page",
+      "provenance": "Original fictional game passage created for Haunted Archive on 2026-10-28; no real people or events.",
+      "quote": "At midnight on Night Three, the north lantern was shining. A clerk recorded that a green beam crossed the harbor. The generator cabinet was sealed with blue wax.",
+      "start": 0,
+      "end": 161,
+      "text_sha256": "393051a46f0f8cc9d111978d6121c89e0e53ae7a1890f927bb2b8371c2328386",
+      "score": 0.43438076972961426
+    }
+  ],
+  "all_scores": [
+    {
+      "source_id": "harbor-a",
+      "score": 0.459565669298172
+    },
+    {
+      "source_id": "harbor-b",
+      "score": 0.43438076972961426
+    },
+    {
+      "source_id": "glasshouse",
+      "score": 0.26294463872909546
+    },
+    {
+      "source_id": "voices",
+      "score": 0.09198784828186035
+    },
+    {
+      "source_id": "wardrobe",
+      "score": 0.0856962502002716
+    }
+  ],
+  "authored_conflicts": [
+    {
+      "topic": "north-lantern-night-three-midnight",
+      "sources": [
+        "harbor-a",
+        "harbor-b"
+      ],
+      "values": [
+        "dark",
+        "shining"
+      ],
+      "basis": "AUTHOR_SUPPLIED_FICTIONAL_ANNOTATIONS_NOT_MODEL_INFERENCE"
+    }
+  ],
+  "scope": "FICTIONAL_CLUES_ONLY_NO_GENERATED_FACTS"
+}
+[exit status: 0]
+
+> python -B archive_game.py note "Was the north lantern lit?" "FICTIONAL DEMO: I have not decided which account to trust." harbor-a harbor-b --output demo/example-notebook.json
+{
+  "kind": "FICTIONAL_READER_NOTEBOOK",
+  "hypothesis": "FICTIONAL DEMO: I have not decided which account to trust.",
+  "hypothesis_origin": "READER_INPUT_NOT_VERIFIED",
+  "personal_review": "NOT_CLAIMED",
+  "selected_evidence": [
+    {
+      "source_id": "harbor-a",
+      "title": "Copper Lighthouse — keeper's page",
+      "provenance": "Original fictional game passage created for Haunted Archive on 2026-10-28; no real people or events.",
+      "quote": "At midnight on Night Three, the north lantern stayed dark. A keeper recorded that no beam crossed the harbor. The generator cabinet was sealed with red wax.",
+      "start": 0,
+      "end": 156,
+      "text_sha256": "789e1c93709400fe4a5b9410433ddf8a591b4231d3b57a3614fd505e6398a60e",
+      "score": null
+    },
+    {
+      "source_id": "harbor-b",
+      "title": "Copper Lighthouse — clerk's page",
+      "provenance": "Original fictional game passage created for Haunted Archive on 2026-10-28; no real people or events.",
+      "quote": "At midnight on Night Three, the north lantern was shining. A clerk recorded that a green beam crossed the harbor. The generator cabinet was sealed with blue wax.",
+      "start": 0,
+      "end": 161,
+      "text_sha256": "393051a46f0f8cc9d111978d6121c89e0e53ae7a1890f927bb2b8371c2328386",
+      "score": null
+    }
+  ],
+  "authored_conflicts": [
+    {
+      "topic": "north-lantern-night-three-midnight",
+      "sources": [
+        "harbor-a",
+        "harbor-b"
+      ],
+      "values": [
+        "dark",
+        "shining"
+      ],
+      "basis": "AUTHOR_SUPPLIED_FICTIONAL_ANNOTATIONS_NOT_MODEL_INFERENCE"
+    }
+  ],
+  "retrieval": {
+    "mode": "semantic",
+    "query": "Was the north lantern lit?",
+    "abstained": false,
+    "threshold": 0.4,
+    "score_kind": "COSINE_SIMILARITY_NOT_PROBABILITY_OR_TRUTH",
+    "hits": [
+      {
+        "source_id": "harbor-a",
+        "title": "Copper Lighthouse — keeper's page",
+        "provenance": "Original fictional game passage created for Haunted Archive on 2026-10-28; no real people or events.",
+        "quote": "At midnight on Night Three, the north lantern stayed dark. A keeper recorded that no beam crossed the harbor. The generator cabinet was sealed with red wax.",
+        "start": 0,
+        "end": 156,
+        "text_sha256": "789e1c93709400fe4a5b9410433ddf8a591b4231d3b57a3614fd505e6398a60e",
+        "score": 0.7182648181915283
+      },
+      {
+        "source_id": "harbor-b",
+        "title": "Copper Lighthouse — clerk's page",
+        "provenance": "Original fictional game passage created for Haunted Archive on 2026-10-28; no real people or events.",
+        "quote": "At midnight on Night Three, the north lantern was shining. A clerk recorded that a green beam crossed the harbor. The generator cabinet was sealed with blue wax.",
+        "start": 0,
+        "end": 161,
+        "text_sha256": "393051a46f0f8cc9d111978d6121c89e0e53ae7a1890f927bb2b8371c2328386",
+        "score": 0.6962066292762756
+      }
+    ],
+    "all_scores": [
+      {
+        "source_id": "harbor-a",
+        "score": 0.7182648181915283
+      },
+      {
+        "source_id": "harbor-b",
+        "score": 0.6962066292762756
+      },
+      {
+        "source_id": "glasshouse",
+        "score": 0.39623162150382996
+      },
+      {
+        "source_id": "wardrobe",
+        "score": 0.20598635077476501
+      },
+      {
+        "source_id": "voices",
+        "score": 0.18244287371635437
+      }
+    ],
+    "authored_conflicts": [
+      {
+        "topic": "north-lantern-night-three-midnight",
+        "sources": [
+          "harbor-a",
+          "harbor-b"
+        ],
+        "values": [
+          "dark",
+          "shining"
+        ],
+        "basis": "AUTHOR_SUPPLIED_FICTIONAL_ANNOTATIONS_NOT_MODEL_INFERENCE"
+      }
+    ],
+    "scope": "FICTIONAL_CLUES_ONLY_NO_GENERATED_FACTS"
+  },
+  "supports_hypothesis": "NOT_AUTOMATICALLY_DETERMINED",
+  "corpus_sha256": "796d049ba4604dd74b9c86f96d548ca210f7ae260bffcfa6e98cf814a4a9cdb0"
+}
+[exit status: 0]
+

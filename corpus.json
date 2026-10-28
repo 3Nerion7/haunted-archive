@@ -1,0 +1,49 @@
+[
+  {
+    "id": "harbor-a",
+    "title": "Copper Lighthouse — keeper's page",
+    "text": "At midnight on Night Three, the north lantern stayed dark. A keeper recorded that no beam crossed the harbor. The generator cabinet was sealed with red wax.",
+    "provenance": "Original fictional game passage created for Haunted Archive on 2026-10-28; no real people or events.",
+    "claims": [
+      {
+        "topic": "north-lantern-night-three-midnight",
+        "value": "dark",
+        "quote": "At midnight on Night Three, the north lantern stayed dark."
+      }
+    ]
+  },
+  {
+    "id": "harbor-b",
+    "title": "Copper Lighthouse — clerk's page",
+    "text": "At midnight on Night Three, the north lantern was shining. A clerk recorded that a green beam crossed the harbor. The generator cabinet was sealed with blue wax.",
+    "provenance": "Original fictional game passage created for Haunted Archive on 2026-10-28; no real people or events.",
+    "claims": [
+      {
+        "topic": "north-lantern-night-three-midnight",
+        "value": "shining",
+        "quote": "At midnight on Night Three, the north lantern was shining."
+      }
+    ]
+  },
+  {
+    "id": "voices",
+    "title": "The bell-tower collection",
+    "text": "A curator digitized the villagers' spoken memories onto wax cylinders. The recordings are stored inside the cedar cabinet in the bell tower. Brass labels name each storyteller.",
+    "provenance": "Original fictional game passage created for Haunted Archive on 2026-10-28; no real people or events.",
+    "claims": []
+  },
+  {
+    "id": "glasshouse",
+    "title": "The marigold greenhouse",
+    "text": "The greenhouse clock struck thirteen while the marigolds slept beneath a frost of silver dust. An apprentice left paper butterflies on the empty bench. The glass roof reflected a sky without stars.",
+    "provenance": "Original fictional game passage created for Haunted Archive on 2026-10-28; no real people or events.",
+    "claims": []
+  },
+  {
+    "id": "wardrobe",
+    "title": "The attic wardrobe",
+    "text": "A wooden wardrobe in the attic hummed whenever rain touched its copper hinges. Inside were a velvet cloak, three broken combs and a jar of dried lavender. Nobody opened its smallest drawer.",
+    "provenance": "Original fictional game passage created for Haunted Archive on 2026-10-28; no real people or events.",
+    "claims": []
+  }
+]
